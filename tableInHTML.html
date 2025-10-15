@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tables</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+      }
+      header p{
+            margin-bottom: 20px;
+      }
+      .container {
+        width: 70%;
+        margin: auto;
+        padding: 2px;
+      }
+      .table1 {
+        border-collapse: collapse;
+        border-spacing: 20px;
+        width: 100%;
+      }
+      .table1 thead th {
+        background-color: black;
+        text-align: left;
+      }
+      .table1 td {
+        padding: 12px;
+        border-bottom: 1px solid black;
+      }
+      thead {
+        background-color: black;
+        color: white;
+        padding: 5px;
+      }
+      .table2 thead th {
+        background-color: #00a651;
+        padding: 20px;
+      }
+
+      th {
+        padding: 10px;
+      }
+      pre {
+        margin-left: -100px;
+        margin-bottom: -15px;
+        margin-top: 50px;
+      }
+
+      .table2 button {
+        padding: 12px 20px;
+        background-color: white;
+        border: 1px solid black
+      }
+      table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+      .box {
+          padding: 20px;
+        margin: 20px;
+        text-align: center;
+      }
+      .box p i span{
+        border-bottom: 1px solid red;
+        padding: 1px;
+      }
+      .box p{
+        padding-top: 10px;
+      }
+      .table2 td{
+        text-align: center;
+      }
+      td button {
+          padding: 10px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        color: #000000;
+        margin: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      td button:hover{
+        background-color: #00a651;
+        color: white;
+        border: hidden;
+        box-shadow: 1px 1px 10px rgb(100, 97, 97);
+      }
+      footer {
+        background-color: #272222;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+    td a {
+        text-decoration: none;
+        color: rgb(21, 140, 187);
+        font-weight: bold;
+    }
+    button {
+      display: block;
+      padding: 12px 30px;
+      border-radius: 20px;
+      background-color: #00a651;
+      color: white;
+      margin: 20px auto 80px auto;
+      font-weight: 800;
+      cursor: pointer;
+      border: none;
+    }
+    button:hover{
+      background-color: #fff;
+      border:1px solid #000000;
+      color:#000000;
+      box-shadow: 1px 1px 10px rgb(100, 97, 97);
+    }
+    footer p{
+      padding-bottom: 10px;
+    }
+    footer a {
+        color: rgb(224, 20, 20);
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          <pre>
+            Our Work 
+            Transfer 
+            <u>KNOWLEDGE</u>
+        </pre>
+        </h1>
+        <p>If you have knowledge, let others light their candles in it</p>
+      </header>
+      <section>
+        <table class="table1">
+          <thead>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+              <th>Column 4</th>
+              <th>Column 5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Item #1</td>
+              <td>Description</td>
+              <td>Description</td>
+              <td>Description</td>
+              <td>Description</td>
+            </tr>
+            <tr>
+              <td>Item #2</td>
+              <td>Description</td>
+              <td>Description</td>
+              <td>Description</td>
+              <td>Description</td>
+            </tr>
+            <tr>
+              <td>Item #3</td>
+              <td>Description</td>
+              <td>Description</td>
+              <td>Description</td>
+              <td>Description</td>
+            </tr>
+            <tr>
+              <td>Item #4</td>
+              <td>Description</td>
+              <td>Description</td>
+              <td>Description</td>
+              <td>Description</td>
+            </tr>
+            <tr>
+              <td>Item #5</td>
+              <td>Description</td>
+              <td>Description</td>
+              <td>Description</td>
+              <td>Description</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <div class="box">
+        <h2>Schedule - How to Register</h2>
+        <p>
+          <i>Images from <span>Vecteezy</span></i>
+        </p>
+      </div>
+      <section>
+        <table class="table2">
+          <thead>
+            <tr>
+              <th>Wednesday, November 08, 2023</th>
+              <th>Services</th>
+              <th>Duration</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10:00 am - 10:50 am</td>
+              <td><a href="#">Alignment & Stretch Pilates</a></td>
+              <td>60 min</td>
+              <td><button>BOOK NOW</button></td>
+            </tr>
+            <tr>
+              <td>11:00 am - 12:00 pm</td>
+              <td><a href="#">Flow & Let Go Yoga</a></td>
+              <td>60min</td>
+              <td><button>BOOK NOW</button></td>
+            </tr>
+            <tr>
+              <td>5:30 pm - 6:50 pm</td>
+              <td><a href="#">Stress Relief Yoga</a></td>
+              <td>80min</td>
+              <td><button>BOOK NOW</button></td>
+            </tr>
+            <tr>
+              <td>6:00 pm - 7:10 pm</td>
+              <td><a href="#">Beginner Hot Flow Yoga</a></td>
+              <td>70min</td>
+              <td><button>BOOK NOW</button></td>
+            </tr>
+          </tbody>
+          <thead>
+              <tr>
+                  <th>Thursday November 09, 2023</th>
+                  <th>Services</th>
+                  <th>Duration</th>
+                  <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>6:00pm - 7:00pm</td>
+                    <td><a href="#">Power Pilates Equipment</a></td>
+              <td>60min</td>
+              <td><button>BOOK NOW</button></td>
+            </tr>
+            <tr>
+                <td>11:00am-12:30pm</td>
+                <td><a href="#">Reformer Flow (Pilates)</a></td>
+                <td>90min</td>
+                <td><button>BOOK NOW</button></td>
+            </tr>
+            <tr>
+              <td>6:00pm - 8:00pm</td>
+              <td><a href="#">Yin/Restorative Yoga</a></td>
+              <td>120min</td>
+              <td><button>BOOK NOW</button></td>
+            </tr>
+        </tbody>
+    </table>
+</table>
+      </section>
+      <button>CHOOSE A MEMBERSHIP</button>
+    </div>
+    <footer>
+      <p>
+        This site was created by <a href="https://www.seebiz.com">seebiz</a>
+      </p>
+    </footer>
+  </body>
+</html>

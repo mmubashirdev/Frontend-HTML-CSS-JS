@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+      form {
+        max-width: 1080px;
+        margin: 30px auto;
+        background-color: #ddf4ee;
+        color: #24622c;
+        padding: 40px 200px;
+        border-radius: 5px;
+        line-height: 20px;
+      }
+      form h1 {
+        margin: 45px 0;
+        font-size: 45px;
+        font-weight: 100;
+      }
+      input:not([type="radio"]),
+      select {
+        padding: 15px;
+        width: 49%;
+        margin-top: 10px;
+        border: 1px solid #24622c;
+        border-radius: 5px;
+      }
+      input[id="deliveryAddress2"],
+      input[id="deliveryAddress"],
+      input[id="pickupAddress2"],
+      input[id="pickupAddress"],
+      input[id="MCStreets"],
+      input[id="phone"] {
+        width: 99%;
+      }
+      input::placeholder,
+      select::placeholder {
+        color: #24622c;
+      }
+      textarea {
+        padding: 15px;
+        width: 99%;
+        margin-top: 10px;
+        border: 1px solid #24622c;
+        border-radius: 5px;
+      }
+      input[type="radio"] {
+        margin: 20px 0px;
+      }
+      #billTo {
+        border: 1px solid green;
+        min-height: 60px;
+        width: 99%;
+        background-color: white;
+        border-radius: 5px;
+        margin: 15px 0;
+      }
+      p {
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 100;
+      }
+      input[type="submit"] {
+        border: none;
+        background-color: #24622c;
+        color: white;
+        width: 100%;
+        border-radius: 25px;
+        padding: 18px 0;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        color: #24622c;
+        background-color: #fff;
+        border: 1px solid #24622c;
+        box-shadow: 2px 2px 2px #24622c;
+      }
+      #mailto {
+        position: fixed;
+        bottom: 26px;
+        right: 2px;
+        width: 100px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/action_page.php" autocomplete="on">
+      <h1>Delivery Request Form</h1>
+      <label for="customerName">Customer Name</label><br />
+      <input
+        type="text"
+        id="FirstName"
+        name="customerName"
+        placeholder="First"
+        required
+      />
+      <input
+        type="text"
+        id="LastName"
+        name="customerName"
+        placeholder="Last"
+        required
+      />
+      <br /><br />
+      <label for="phone">Phone</label><br />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="### ### ####"
+        required
+      />
+      <br /><br />
+      <label for="deliveryAddress">Delivery Address</label><br />
+      <input
+        type="text"
+        id="deliveryAddress"
+        name="deliveryAddress"
+        placeholder="Street Address"
+        required
+      /><br />
+      <input
+        type="text"
+        id="deliveryAddress2"
+        name="deliveryAddress2"
+        placeholder="Street Address Line 2"
+      /><br />
+      <input
+        type="text"
+        id="delivery"
+        name="city"
+        placeholder="City"
+        required
+      />
+      <input
+        type="text"
+        id="deliveryregion"
+        name="region"
+        placeholder="Region"
+        required
+      /><br />
+      <input
+        type="text"
+        id="deliverypostal"
+        name="postal"
+        placeholder="Postal / Zip Code"
+        required
+      />
+      <select name="deliverycountry" id="deliverycountry">
+        <option value="" disabled selected>Country</option>
+      </select>
+      <br /><br />
+      <label for="MCStreets">Major Cross Streets</label><br />
+      <input
+        type="text"
+        id="MCStreets"
+        name="MCStreets"
+        size="100"
+      /><br /><br />
+      <label for="pickupAddress">Pickup Location</label><br />
+      <input
+        type="text"
+        id="pickupAddress"
+        name="pickupAddress"
+        placeholder="Street Address"
+        required
+      /><br />
+      <input
+        type="text"
+        id="pickupAddress2"
+        name="pickupAddress2"
+        placeholder="Street Address Line 2"
+      /><br />
+      <input
+        type="text"
+        id="pickupcity"
+        name="city"
+        placeholder="City"
+        required
+      />
+      <input
+        type="text"
+        id="pickuupregion"
+        name="region"
+        placeholder="Region"
+        required
+      /><br />
+      <input
+        type="text"
+        id="pickuppostal"
+        name="postal"
+        placeholder="Postal / Zip Code"
+        required
+      />
+      <select name="pickupcountry" id="pickupcountry">
+        <option value="" disabled selected>Country</option>
+      </select>
+      <br /><br />
+      <label for="itemsDeliver">Items To Deliver</label><br />
+      <textarea
+        name="itemsDeliver"
+        id="itemsDeliver"
+        cols="25"
+        rows="4"
+        required
+      ></textarea
+      ><br /><br />
+      <label for="specialInstructions">Special Instructions</label><br />
+      <textarea
+        name="specialInstructions"
+        id="specialInstructions"
+        cols="25"
+        rows="4"
+        required
+      ></textarea
+      ><br /><br />
+      <label>Assembly Reuired?</label><br />
+      <input type="radio" name="assembly" id="assembly-yes" value="Yes" />
+      <label for="assembly-yes">Yes</label><br />
+      <input type="radio" name="assembly" id="assembly-no" value="No" />
+      <label for="assembly-no">No</label><br /><br />
+      <label>Any Stairs</label><br />
+      <input type="radio" name="stairs" id="stairs-yes" value="stairs-yes" />
+      <label for="stairs-yes">Yes</label><br />
+      <input type="radio" name="stairs" id="stairs-no" value="stairs-no" />
+      <label for="stairs-no">No</label><br /><br />
+      <label>Move Existing Furniture?</label><br />
+      <input
+        type="radio"
+        name="furnitureMove"
+        id="furnitureMove-yes"
+        value="furnitureMove-yes"
+      />
+      <label for="furnitureMove-yes">Yes</label><br />
+      <input
+        type="radio"
+        name="furnitureMove"
+        id="furnitureMove-no"
+        value="furnitureMove-no"
+      />
+      <label for="furnitureMove-no">No</label><br /><br />
+      <label for="billTo">Bill To</label><br />
+      <div id="billTo" ondrop="drop(event)" ondragover="dragOver(event)"></div>
+      <p>Drag some items inside this container</p>
+      <input type="submit" value="SEND" />
+    </form>
+    <script>
+      populateCountrySelect("deliverycountry");
+      populateCountrySelect("pickupcountry");
+
+      function populateCountrySelect(selectID) {
+        fetch("https://restcountries.com/v3.1/all?fields=name,cca2")
+          .then((response) => response.json())
+          .then((data) => {
+            data.sort((a, b) => a.name.common.localeCompare(b.name.common));
+            const select = document.getElementById(selectID);
+            select.innerHTML = "";
+            data.forEach((country) => {
+              const option = document.createElement("option");
+              option.value = country.cca2;
+              option.textContent = country.name.common;
+              if (country.cca2 === "PK") {
+                option.selected = true;
+              }
+              select.appendChild(option);
+            });
+          });
+      }
+      function dragOver(event) {
+        event.preventDefault();
+      }
+      function drop(event) {
+        event.preventDefault();
+        const box = document.getElementById("billTo");
+        if (event.dataTransfer.files && event.dataTransfer.files.length > 0) {
+          for (const file of event.dataTransfer.files) {
+            if (file.type.startsWith("image/")) {
+              const img = document.createElement("img");
+              img.src = URL.createObjectURL(file);
+              box.appendChild(img);
+              img.style.maxWidth = "100px";
+              img.style.maxHeight = "100px";
+            }
+          }
+        }
+      }
+    </script>
+    <a href="mailto:mmubashirr.dev@gmail.coma"
+      ><img src="/images/mailIcon.png" alt="mailto" id="mailto"
+    /></a>
+  </body>
+</html>

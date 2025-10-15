@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+nav div ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333333;
+  align-items: center;
+  padding: 20px;
+}
+.link {
+  background-color: #222222;
+  padding: 10px;
+}
+.link a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 5px;
+}
+main {
+  margin: auto;
+  max-width: 960px;
+}
+.container {
+  width: 940px;
+  height: 360px;
+  background-color: #333333;
+  max-width: 960px;
+  margin-top: 30px;
+}
+.container p {
+  color: white;
+  text-align: center;
+  padding: 160px;
+  font-size: xx-large;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.image {
+  width: 140px;
+  height: 30px;
+  background-color: #333333;
+  max-width: 960px;
+  margin-top: 30px;
+  padding: 80px;
+  border: 1px solid grey;
+}
+.image p {
+  color: white;
+  text-align: center;
+  padding: 160px;
+  font-size: xx-large;
+}
+
+.eachCard a {
+  color: orange;
+  text-decoration: none;
+  text-align: right;
+}
+.about {
+  display: flex;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      #billTo {
+        border: 1px solid green;
+        min-height: 100px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <h1>Delivery Request Form</h1>
+      <label for="customerName">Customer Name</label><br />
+      <input
+        type="text"
+        id="customerName"
+        name="customerName"
+        placeholder="First"
+        required
+      />
+      <input
+        type="text"
+        id="customerName"
+        name="customerName"
+        placeholder="Last"
+        required
+      />
+      <br /><br />
+      <label for="phone">Phone</label><br />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="### ### ####"
+        required
+      />
+      <br /><br />
+      <label for="deliveryAddress">Delivery Address</label><br />
+      <input
+        type="text"
+        id="deliveryAddress"
+        name="deliveryAddress"
+        placeholder="Street Address"
+        required
+      /><br />
+      <input
+        type="text"
+        id="deliveryAddress2"
+        name="deliveryAddress2"
+        placeholder="Street Address Line 2"
+      /><br />
+      <input type="text" id="city" name="city" placeholder="City" required />
+      <input
+        type="text"
+        id="region"
+        name="region"
+        placeholder="Region"
+        required
+      /><br />
+      <input
+        type="text"
+        id="postal"
+        name="postal"
+        placeholder="Postal / Zip Code"
+        required
+      />
+      <select name="country" id="country">
+        <option value="" disabled selected>Country</option>
+      </select>
+      <br /><br />
+      <label for="MCStreets">Major Cross Streets</label><br />
+      <input type="text" id="MCStreets" name="MCStreets" /><br /><br />
+      <label for="itemsDeliver">Items To Deliver</label><br />
+      <textarea
+        name="itemsDeliver"
+        id="itemsDeliver"
+        cols="25"
+        rows="5"
+        required
+      ></textarea
+      ><br /><br />
+      <label for="specialInstructions">Special Instructions</label><br />
+      <textarea
+        name="specialInstructions"
+        id="specialInstructions"
+        cols="25"
+        rows="5"
+        required
+      ></textarea
+      ><br /><br />
+      <label>Assembly Reuired?</label><br />
+      <input type="radio" name="assembly" id="assembly-yes" value="Yes" />
+      <label for="assembly-yes">Yes</label><br />
+      <input type="radio" name="assembly" id="assembly-no" value="No" />
+      <label for="assembly-no">No</label><br /><br />
+      <label>Any Stairs</label><br />
+      <input type="radio" name="stairs" id="stairs-yes" value="stairs-yes" />
+      <label for="stairs-yes">Yes</label><br />
+      <input type="radio" name="stairs" id="stairs-no" value="stairs-no" />
+      <label for="stairs-no">No</label><br /><br />
+      <label>Move Existing Furniture?</label><br />
+      <input
+        type="radio"
+        name="furnitureMove"
+        id="furnitureMove-yes"
+        value="furnitureMove-yes"
+      />
+      <label for="furnitureMove-yes">Yes</label><br />
+      <input
+        type="radio"
+        name="furnitureMove"
+        id="furnitureMove-no"
+        value="furnitureMove-no"
+      />
+      <label for="furnitureMove-no">No</label><br /><br />
+      <label for="billTo">Bill To</label><br />
+      <div id="billTo" ondrop="drop(event)" ondragover="dragOver(event)"></div>
+      <p>Drag some items inside this container</p>
+    </form>
+    <script>
+      fetch("https://restcountries.com/v3.1/all?fields=name,cca2")
+        .then((response) => response.json())
+        .then((data) => {
+          data.sort((a, b) => a.name.common.localeCompare(b.name.common));
+          const select = document.getElementById("country");
+          select.innerHTML = "";
+          data.forEach((country) => {
+            const option = document.createElement("option");
+            option.value = country.cca2;
+            option.textContent = country.name.common;
+            if (country.cca2 === "PK") {
+              option.selected = true;
+            }
+            select.appendChild(option);
+          });
+        });
+
+      function dragOver(event) {
+        e.preventDefault();
+      }
+      function drop(event) {
+        event.preventDefault();
+        const box = document.getElementById("billTo");
+        box.innerHTML = "";
+        if (event.dataTransfer.files && event.dataTransfer.files.length > 0) {
+          for (const file of event.dataTransfer.files) {
+            const fileType = file.type;
+
+            if (fileType.startsWith("image/")) {
+              const img = document.createElement("img");
+              img.src = URL.createObjectURL(file);
+              img.style.maxWidth = "100px";
+              img.style.margin = "5px";
+              box.appendChild(img);
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

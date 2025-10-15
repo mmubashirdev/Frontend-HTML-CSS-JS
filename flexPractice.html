@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        color: white;
+      }
+      .container {
+        width: 910px;
+        margin: 50px auto;
+        background-color: white;
+      }
+      header {
+        background-color: #54d4ed;
+        padding: 2px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .flexContainer {
+        display: flex;
+        flex-flow: row;
+        flex-direction: column;
+        align-content: space-between;
+        flex-wrap: nowrap;
+      }
+      .bigFlex {
+        display: flex;
+        flex-direction: row;
+      }
+      .heroBox {
+        background-color: #d9c9e4;
+        width: 300px;
+        height: 250px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-right: 10px;
+      }
+      section {
+        background-color: #f6c733;
+        width: 600px;
+        height: 400px;
+        text-align: center;
+        margin-top: -20px;
+      }
+      aside {
+        width: 300px;
+        background-color: #a0c264;
+        height: 360px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .article1 {
+        background-color: #898989;
+        height: 200px;
+        text-align: center;
+        margin-bottom: 9px;
+      }
+      #article2 {
+        display: flex;
+        justify-content: space-between;
+        height: 120px;
+      }
+      .post {
+        background-color: #f5ccde;
+        text-align: center;
+        margin-left: 10px;
+        width: 280px;
+      }
+      .imgContainer {
+        background-color: #2bb776;
+        text-align: center;
+        margin-right: 9px;
+        width: 600px;
+      }
+      footer {
+        background-color: #fea501;
+        padding: 2px;
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Header</h1>
+      </header>
+      <div class="bigFlex">
+        <div class="flexContainer">
+          <div class="heroBox">
+            <h2>Hero</h2>
+          </div>
+          <aside>
+            <h2>Sidebar</h2>
+          </aside>
+        </div>
+        <div class="flexContainer2">
+          <section>
+            <h2>Main Content</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              quidem dolorum error?
+            </p>
+          </section>
+          <article class="article1">
+            <h2>Extra Content</h2>
+          </article>
+        </div>
+      </div>
+      <article id="article2">
+        <div class="imgContainer">
+          <h2>Related Images</h2>
+        </div>
+        <div class="post">
+          <h2>Related Posts</h2>
+        </div>
+      </article>
+      <footer>
+        <h2>Footer</h2>
+      </footer>
+    </div>
+  </body>
+</html>

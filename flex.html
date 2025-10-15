@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 20px 20px;
+      }
+      header nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        padding: 20px;
+      }
+      header nav ul li a:hover {
+        cursor: pointer;
+        color: #bfb29c;
+      }
+      .imgContainer img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+      }
+      .about {
+        padding: 20px;
+        text-align: center;
+        margin: 0 415px;
+      }
+      .about h2 {
+        margin: 20px 10px;
+        font-size: 30px;
+        font-weight: normal;
+      }
+      .about p {
+        font-size: 18px;
+        text-align: center;
+        text-align-last: center;
+        font-weight: 50;
+      }
+      .flexText {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        background: #bfb29c;
+        height: 250px;
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: baseline;
+      }
+      .text {
+        color: white;
+      }
+      .text h3 {
+        margin-bottom: 20px;
+        font-weight: normal;
+      }
+      .text p {
+        width: 290px;
+      }
+      .main h1 {
+        text-align: center;
+        margin: 30px 0 10px 0;
+        font-weight: normal;
+      }
+      .main p {
+        text-align: center;
+        margin: 20px 0 20px 0;
+      }
+      .box-Text {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        background-color: #a996bc;
+      }
+      .main1 {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 900px;
+        margin: auto;
+        gap: 20px;
+      }
+      .box-Text {
+        width: 300%;
+      }
+      .box-Text p {
+        padding: 36px;
+        color: white;
+        height: 500px;
+        text-align: left;
+        line-height: 30px;
+      }
+      .logo-Text img {
+        border-radius: 50%;
+        margin-top: 50px;
+      }
+      .logo-Text p {
+        color: grey;
+        line-height: 30px;
+        padding: 6px;
+      }
+      .problems {
+        text-align: center;
+        margin: 50px 0 20px 0;
+        background-color: #bfb29c;
+        color: white;
+        padding: 50px;
+        height: 400px;
+      }
+      .problems h3 {
+        font-weight: normal;
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+      }
+      .problem-Text {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 20px;
+      }
+      .problem-Text p {
+        width: 513px;
+        line-height: 30px;
+        padding: 10px;
+        text-align: left;
+      }
+      .social h3 {
+        text-align: center;
+        margin: 50px 0 20px 0;
+        font-weight: normal;
+        font-size: 30px;
+      }
+      .social-Img {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .social-Img a:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 0.3s;
+        box-shadow: 2px 2px 10px grey;
+      }
+      .textAboveFooter {
+        text-align: center;
+        background-color: #a996bc;
+        padding: 20px;
+        margin-top: 70px;
+      }
+      .textAboveFooter button {
+        color: white;
+        border: none;
+        cursor: pointer;
+        background: none;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #333333;
+      }
+      footer p {
+        color: white;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="imgContainer">
+      <img src="/images/tablechair.jpg" alt="A Chair and a plant" />
+    </div>
+    <div class="about">
+      <h2>About Us</h2>
+      <p>
+        About Us We are an contemporary home furnishing store headquartered in
+        Seattle, Washington. Founded by Joan and Jamie Brooke, children of
+        immigrants who dreamed of creating beautiful homes in their new country,
+        the goal is to enable everyone to create the home they envision without
+        breaking the bank. Whether you're looking to redecorate a room or
+        renovate an entire house, we're here to help you find the furniture and
+        accessories that will make that dream a reality. Also sells high quality
+        gifts, the kinds that you'll love giving as much as people love to
+        receive.
+      </p>
+    </div>
+    <div class="flexText">
+      <div class="text">
+        <h3>Sustainable Future</h3>
+        <p>Sample text. Click to select the Text Element.</p>
+      </div>
+      <div class="text">
+        <h3>Delivery</h3>
+        <p>Sample text. Click to select the Text Element.</p>
+      </div>
+      <div class="text">
+        <h3>Guarantee</h3>
+        <p>Sample text. Click to select the Text Element.</p>
+      </div>
+    </div>
+    <div class="main">
+      <h1>Turn your house into a Home</h1>
+      <p>Modern Decor to help you achieve your dream interior</p>
+    </div>
+    <div class="main1">
+      <div class="box-Text">
+        <p>
+          Odio eu feugiat pretium nibh ipsum consequat nist. Adipiscing elit
+          pellentesque habitant morbi tristique senectus Ultrices neque omare
+          aenean euismod elementum. Dignissim sodales ut eu sem integer vitae
+          justo eget. Egestas erat imperdiet sed euismod nisi Enim facilisis
+          gravida neque convallis a cras semper auctor Quam elementum pulvinar
+          etiam non quam lacus suspendisse faucibus. Nibh nisl condimentum Image
+          from Freepik
+        </p>
+      </div>
+      <div class="logo-Text">
+        <img
+          src="/images/livingRoom.png"
+          alt="logo"
+          width="150px"
+          height="150px"
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada
+          proin libero nunc consequat. Mauris ultrices eras in cursus. Nisi
+          tincidunt eget nullam non nisi. Dignissim suspendisse in est ante in.
+          Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi
+          imperdiet dui accumsan sit amet.
+        </p>
+      </div>
+    </div>
+    <div class="problems">
+      <p>About Us</p>
+      <h3>Have any problems?</h3>
+      <div class="problem-Text">
+        <p>
+          Article evident arrived express lyghest men did boy, Mistress sensible
+          entirely am so. Quick can manor smart money hopes worth too. Comfort
+          girisduce husband boy her had hearing. Law others thers passed but
+          wishes. You day real less till dear react. Considered une dispatched
+          melancholy sympathize dncrition led. Oh feel if up to ilike. He an
+          thing rapist these after going drawn or.
+        </p>
+        <p>
+          Article evident activell express begivest men did buy. Mistress
+          sensible entirely am so. Quick can manor smart money hopes worth too.
+          Comfort produce husband bay her had hearing, Law others theirs passed
+          but wishes. You day real less till dear read. Considerest une
+          dispatched melancholy sympathize decretion led. Cih feel if up tok
+        </p>
+      </div>
+    </div>
+    <div class="social">
+      <h3>Our Social</h3>
+      <div class="social-Img">
+        <a href="#">
+          <img
+            src="/images/livingArea.png"
+            alt="room"
+            height="200px"
+            width="200px"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="/images/livingRoom.png"
+            alt="room"
+            height="200px"
+            width="200px"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="/images/drawingRoom.png"
+            alt="room"
+            height="200px"
+            width="200px"
+          />
+        </a>
+        <a href="#">
+          <img src="/images/sofa.png" alt="room" height="200px" width="200px" />
+        </a>
+      </div>
+    </div>
+    <div class="textAboveFooter">
+      <button>Simple text. Click to select the Text Element</button>
+    </div>
+    <footer>
+      <p>This site was created by Mubashir - Copyright &copy;</p>
+    </footer>
+  </body>
+</html>
