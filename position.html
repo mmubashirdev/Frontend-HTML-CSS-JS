@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      main {
+        background-color: #e5e5e5;
+        height: 500px;
+      }
+      div.container {
+        position: relative;
+      }
+      div.content {
+        position: absolute;
+        background-color: white;
+        width: 300px;
+        left: 730px;
+        margin: 5px;
+        padding: 25px;
+        top: 120px;
+        line-height: 32px;
+      }
+      .content a {
+        border-bottom: 1px solid black;
+        text-decoration: none;
+        color: black;
+      }
+      #img1 {
+        position: absolute;
+        top: 128px;
+        left: 400px;
+        box-shadow: 1px 2px 5px black;
+      }
+
+      #img2 {
+        position: absolute;
+        top: 235px;
+        left: 560px;
+        box-shadow: 2px 2px 5px black;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #000000;
+        border: none;
+        color: white;
+        font-size: 0.7rem;
+        cursor: pointer;
+        border-radius: 1px;
+      }
+
+      button:hover {
+        background-color: white;
+      }
+      .circle {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        background-color: orange;
+        position: absolute;
+        top: 40px;
+        left: 564px;
+      }
+      footer {
+        background-color: #333333;
+        color: white;
+      }
+      footer p {
+        text-align: center;
+        padding: 15px 0 0 0;
+      }
+      footer .credit {
+        text-align: center;
+        padding: 80px 0 0 20px;
+      }
+      footer a {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="circle"></div>
+        <img
+          id="img1"
+          src="https://raw.github.com/mmubashirdev/Frontend-HTML-CSS-JS/main/images/meetingDiscussion.jpg"
+          alt="meeting"
+          width="300px"
+        />
+        <img
+          id="img2"
+          src="https://raw.github.com/mmubashirdev/Frontend-HTML-CSS-JS/main/images/girl.png"
+          alt="Professional woman"
+          width="250px"
+        />
+        <div class="content">
+          <h1>Brand Identity Design Agency</h1>
+          <ul style="list-style: none">
+            <li>✔ Let us help you stand out.</li>
+            <li>✔ Professional design services.</li>
+            <li>✔ Creating brands that connect.</li>
+          </ul>
+          <p>Images from <a href="#">Freepik</a></p>
+          <button>CONTACT US</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Sample text. Click to select the text box. Click again or double click
+        to start editing the text.
+      </p>
+      <p class="credit">Website created by <a href="#">Mubashir</a>.</p>
+    </footer>
+  </body>
+</html>
