@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  background-color: white;
+}
+h1 {
+  color: rgb(19, 19, 85);
+  font-size: 25px;
+}
+#newProduct {
+  background-color: #008fbd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 50px 0 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.buttons {
+  float: right;
+  margin: 10px 0 10px;
+  display: inline-flex;
+}
+.buttons button {
+  padding: 7px;
+  width: 30px;
+  margin: 10px 0px;
+  cursor: pointer;
+  border: 1px solid #131313;
+}
+.buttons #btn1 {
+  background-color: #008fbd;
+  border: 1px solid #008fbd;
+  color: white;
+}
+.buttons button:not(:last-child) {
+  border-right: none;
+}
+.buttons button:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.buttons button:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.buttons button:hover {
+  background-color: #008fbd;
+  color: white;
+  border: 1px solid #008fbd;
+  size: 2px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table thead {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+th,
+td {
+  padding: 10px;
+}
+#hr1 {
+  border: 2px solid #00c3f1;
+  margin-top: 70px;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 100;
+  margin: 10px 0px;
+}
+.formElements {
+  display: flex;
+  align-items: center;
+}
+.formElements input[type="text"],
+[type="number"],
+select {
+  padding: 12px;
+  margin: 8px 5px 10px 5px;
+  width: 87vw;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.formElements label {
+  width: 150px;
+  margin: 0 30px;
+  font-weight: bold;
+  text-align: right;
+}
+.formElementsCheckbox input[type="checkbox"] {
+  margin: 20px 0 20px 200px;
+  background-color: grey;
+}
+.formElementsButtons {
+  display: flex;
+  justify-content: space-between;
+}
+.formElementsButtons button {
+  padding: 10px 20px;
+  margin: 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+#backToList {
+  background-color: red;
+}
+#backToList::before {
+  content: "← ";
+  font-size: 20px;
+  font-weight: bolder;
+}
+#save {
+  background-color: blue;
+}
+#save::before {
+  content: "💾 ";
+  font-size: 20px;
+}

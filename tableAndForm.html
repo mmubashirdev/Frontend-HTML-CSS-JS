@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="tableAndForm.css" />
+  </head>
+  <body>
+    <h1>Product List</h1>
+    <div class="buttons">
+      <button id="btn1">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>>></button>
+    </div>
+    <button id="newProduct">New Product</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Discontinued</th>
+          <th>Supplier</th>
+          <th>Category</th>
+          <th>Unit Price</th>
+          <th>Units in Stock</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alice Mutton</td>
+          <td>yes</td>
+          <td>Pavlova, Ltd.</td>
+          <td>Meat/Poultry</td>
+          <td>39.00</td>
+          <td>0</td>
+          <td><a href="select">Select</a> | <a href="edit">Edit</a></td>
+        </tr>
+        <tr>
+          <td>Aniseed Syrup</td>
+          <td></td>
+          <td>Exotic Liquids</td>
+          <td>Condiments</td>
+          <td>10.00</td>
+          <td>13</td>
+          <td><a href="select">Select</a> | <a href="edit">Edit</a></td>
+        </tr>
+        <tr>
+          <td>Boston Crab Meat</td>
+          <td></td>
+          <td>New England Seafood Cannery</td>
+          <td>Seafood</td>
+          <td>18.40</td>
+          <td>123</td>
+          <td><a href="select">Select</a> | <a href="edit">Edit</a></td>
+        </tr>
+        <tr>
+          <td>Camembert Pierrot</td>
+          <td></td>
+          <td>Gai pâturage</td>
+          <td>Dairy Products</td>
+          <td>34.00</td>
+          <td>19</td>
+          <td><a href="select">Select</a> | <a href="edit">Edit</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr id="hr1" />
+    <h2>Edit Product (Aniseed Syrup)</h2>
+    <hr />
+    <form action="#">
+      <div class="formElements">
+        <label for="pName">Product Name</label>
+        <input
+          type="text"
+          id="pName"
+          name="pName"
+          placeholder="Aniseed Syrup"
+        />
+      </div>
+      <div class="formElementsCheckbox">
+        <input type="checkbox" name="discontinued" id="discontinued" />
+        <label for="discontinued">Discontinued</label>
+      </div>
+      <div class="formElements">
+        <label for="supplier">Supplier</label>
+        <select name="supplier" id="supplier">
+          <option value="A">Exotic Liquids</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+        </select>
+      </div>
+      <div class="formElements">
+        <label for="category">Category</label>
+        <select name="category" id="category">
+          <option value="A">Condiments</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+        </select>
+      </div>
+      <div class="formElements">
+        <label for="quantityPerUnit">QuantityPerUnit</label>
+        <input
+          type="number"
+          name="quantityPerUnit"
+          id="quantityPerUnit"
+          placeholder="12-550ml bottles"
+          step="0.01"
+        />
+      </div>
+
+      <div class="formElements">
+        <label for="unitPrice">UnitPrice</label>
+        <input
+          type="number"
+          name="unitPrice"
+          id="unitPrice"
+          placeholder="10.0000"
+          step="0.01"
+        />
+      </div>
+
+      <div class="formElements">
+        <label for="unitsInStock">UnitsInStock</label>
+        <input
+          type="number"
+          name="unitsInStock"
+          id="unitsInStock"
+          placeholder="13"
+        />
+      </div>
+
+      <div class="formElements">
+        <label for="unitsInOrder">UnitsInOrder</label>
+        <input
+          type="number"
+          name="unitsInStock"
+          id="unitsInStock"
+          placeholder="70"
+        />
+      </div>
+
+      <div class="formElements">
+        <label for="reorderLevel">ReorderLevel</label>
+        <input
+          type="number"
+          name="reorderLevel"
+          id="reorderLevel"
+          placeholder="25"
+        />
+      </div>
+
+      <div class="formElementsButtons">
+        <button id="backToList">Back To List</button>
+        <button id="save">Save</button>
+      </div>
+    </form>
+  </body>
+</html>
