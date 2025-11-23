@@ -1,4 +1,3 @@
-```markdown
 # 📰 Webify - Grid-Based Magazine Layout
 
 This project, **Webify**, is a responsive magazine/blog-style webpage that uses a modern **CSS Grid–based layout** to organize content such as categories, featured posts, trending videos, and a multi-column article section.
@@ -37,16 +36,14 @@ This project, **Webify**, is a responsive magazine/blog-style webpage that uses 
 ## 📁 Project Structure
 
 ```
-
-webify-magazine/
+project13/
 ├── index.html        # Main webpage
 ├── style.css         # Stylesheet
 └── images/           # All image assets
-├── logo.png
-├── hearts.jpg
-└── ...etc
-
-````
+    ├── logo.png
+    ├── hearts.jpg
+    └── ...etc
+```
 
 ---
 
@@ -54,14 +51,14 @@ webify-magazine/
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repository-url>
-   cd webify-magazine
-````
+   git clone https://github.com/mmubashirdev/Frontend-HTML-CSS-JS.git
+   cd Frontend-HTML-CSS-JS/project13
+   ```
 
-2. **Add image assets**
+2. **Add image assets**  
    Place all required images inside the `images/` folder.
 
-3. **Run the project**
+3. **Run the project**  
    Simply open `index.html` in any browser.
 
 ---
@@ -69,8 +66,6 @@ webify-magazine/
 ## 🔧 Key CSS Grid Implementations
 
 ### 1. Navigation (`nav`)
-
-A simple two-column grid for logo + menu:
 
 ```css
 nav {
@@ -84,12 +79,10 @@ nav {
 
 ### 2. Main Content Grid (`.grid`)
 
-Creates the 3-column layout for Culture, Lifestyle, and Celebrity:
-
 ```css
 .grid {
   display: grid;
-  grid-auto-flow: column; /* Places .grid1 sections side-by-side */
+  grid-auto-flow: column;
   gap: 35px;
 }
 ```
@@ -97,8 +90,6 @@ Creates the 3-column layout for Culture, Lifestyle, and Celebrity:
 ---
 
 ### 3. Top Picks Layout (`.pictures`)
-
-Asymmetrical layout using **grid-template-areas**:
 
 ```css
 .pictures {
@@ -121,12 +112,13 @@ Asymmetrical layout using **grid-template-areas**:
 
 Feel free to extend this design by adding:
 
-* More categories
-* Animated transitions
-* Dark/light theme toggles
-* API-powered content
+- More categories  
+- Animated transitions  
+- Dark/light theme toggles  
+- API-powered content  
 
 ---
 
-## 📄 License
- * Muhammad Mubashir
+## 📄 License  
+**Muhammad Mubashir**
+```
