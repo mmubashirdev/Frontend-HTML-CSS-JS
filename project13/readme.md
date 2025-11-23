@@ -1,4 +1,4 @@
-# 📰 Webify - Grid-Based Magazine Layout
+# Grid-Based Magazine Layout
 
 This project, **Webify**, is a responsive magazine/blog-style webpage that uses a modern **CSS Grid–based layout** to organize content such as categories, featured posts, trending videos, and a multi-column article section.
 
