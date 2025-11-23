@@ -1,0 +1,373 @@
+:root {
+  --primary: #2e937a;
+  --bg: #c8e8e0;
+  --secondarybg: #fbeee0;
+  --ternerybg: #f1f9f7;
+  --footerbg: #333333;
+  --color-text: #1a1a1a;
+  --color-text-light: #ffffff;
+
+  --space-sm: 1rem;
+  --space-xl: 2rem;
+  --space-lg: 3.5rem;
+  --line-height: 25px;
+
+  --radius-sm: 8px;
+  --fs-base: clamp(0.9rem, 1vw, 1rem);
+  --shadow-md: 1px 2px 10px #808080;
+  --container-width: 1200px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+main {
+  background-color: var(--bg);
+  padding: var(--space-lg);
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-text-light);
+  width: fit-content;
+  margin: auto;
+  background-color: var(--color-text-light);
+  border-radius: var(--radius-sm);
+  gap: 20px;
+}
+.img {
+  background-color: var(--ternerybg);
+  padding: 40px;
+}
+.img img {
+  object-fit: contain;
+  position: relative;
+  top: 45px;
+}
+.about p {
+  font-size: 16px;
+  color: grey;
+  padding: 20px 0 20px;
+  letter-spacing: 2px;
+}
+.about {
+  width: 26vw;
+  padding: 62px 30px 20px;
+}
+.about h1 {
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+.about ul li {
+  list-style: none;
+  line-height: 30px;
+  padding-left: 30px;
+  position: relative;
+}
+.about ul li::before {
+  content: "▶";
+  color: orange;
+  font-size: 10px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn {
+  color: white;
+  background-color: var(--primary);
+  border: none;
+  padding: 8px 30px 8px;
+  border-radius: var(--radius-sm);
+  margin: 20px 0;
+  font-weight: 100;
+  cursor: pointer;
+}
+.centertext {
+  text-align: center;
+  width: 40vw;
+  margin: 80px auto;
+}
+.heading {
+  font-weight: 100;
+  padding-bottom: 20px;
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin: 0 20px 10px;
+}
+.quick_easy p {
+  line-height: 30px;
+}
+.heading1 {
+  font-weight: 100;
+  padding-bottom: 5px;
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin: 80px 39px 2px 0px;
+}
+.sec2 {
+  width: 65vw;
+  margin: auto;
+}
+.customerSatisfaction {
+  width: 34vw;
+}
+.customerSatisfaction p {
+  font-size: 16px;
+  color: grey;
+  padding: 20px 0 20px;
+  font-weight: 500;
+}
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.boxes {
+  width: 17vw;
+  padding: 20px;
+  position: relative;
+}
+.img1 {
+  object-fit: scale-down;
+}
+.zIndex {
+  z-index: -1;
+  position: absolute;
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--bg);
+  top: 144px;
+  right: 164px;
+  opacity: 0.8;
+}
+.boxes h3 {
+  margin: 20px 0 20px;
+  font-weight: 400;
+}
+.boxes p {
+  line-height: 23px;
+}
+.h2 {
+  font-weight: 500;
+}
+.sec3 {
+  background-color: var(--bg);
+}
+.pf {
+  font-size: 16px;
+  color: var(--primary);
+  padding: 20px 0 20px;
+  letter-spacing: 2px;
+}
+.features {
+  text-align: center;
+  width: 40vw;
+  margin: 80px auto 10px;
+  padding: 50px;
+}
+.flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.card {
+  border-radius: 8px;
+  background-color: white;
+  width: 18vw;
+  text-align: center;
+}
+.card h3 {
+  color: var(--primary);
+  margin: 20px 0 20px;
+}
+.card img {
+  padding: 10px;
+}
+.card p {
+  line-height: 20px;
+}
+.sec3 .p1 {
+  padding-bottom: 50px;
+  font-weight: 100;
+}
+.p1 span {
+  padding-bottom: 3px;
+  border-bottom: 1px solid black;
+}
+.cards {
+  border-radius: 10px;
+  padding: 40px 20px;
+  margin: 20px 5px 20px;
+  width: 30vw;
+}
+.cards h4 {
+  font-size: 2rem;
+  padding: 15px 0;
+}
+.cards > :first-child {
+  font-size: 19px;
+}
+.card1 {
+  background-color: var(--secondarybg);
+}
+.card2 {
+  background-color: var(--bg);
+}
+.card1 p {
+  color: rgb(255, 175, 26);
+  font-weight: 600;
+}
+.card2 p {
+  color: var(--primary);
+  font-weight: 600;
+}
+.sec5 {
+  background-color: #fcf4eb;
+}
+.content h3,
+p {
+  padding-bottom: 30px;
+}
+.content h3 {
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+.sec5 {
+  display: flex;
+  position: relative;
+}
+.content {
+  width: 36vw;
+  margin: auto;
+  padding: 80px 0 245px 220px;
+  line-height: 25px;
+}
+.border {
+  border-radius: 50%;
+  background-color: var(--bg);
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.image img {
+  border-radius: 50%;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 12px;
+  left: 10px;
+  object-fit: cover;
+}
+.content2 {
+  width: 40vw;
+  padding: 0 20px 330px 0;
+}
+.content2 h5 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  width: 22vw;
+  font-weight: 100;
+  margin: 20px 0;
+}
+.btn2 {
+  color: white;
+  background-color: var(--primary);
+  border: none;
+  padding: 5px 60px;
+  border-radius: var(--radius-sm);
+  margin: 10px 0;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.comma {
+  position: relative;
+  top: 65px;
+  left: 115px;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+}
+.btn3 {
+  color: white;
+  background-color: var(--primary);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  margin: 20px 0;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.download h5 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+.download {
+  width: 40vw;
+  margin: auto;
+  padding: 50px;
+  position: absolute;
+  top: 292vw;
+  left: 28vw;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: var(--shadow-md);
+}
+.feedback {
+  padding: 200px 200px;
+  background-color: var(--bg);
+}
+.box1 {
+  width: 27vw;
+  line-height: 30px;
+}
+.box1 h6 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  width: 5vw;
+  margin: 10px 0;
+}
+.para {
+  color: var(--primary);
+  font-weight: ;
+}
+.box1 p:first-of-type {
+  font-weight: 700;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+.box2 {
+  line-height: 20px;
+}
+.box3 {
+  width: 22vw;
+}
+footer {
+  background-color: #333333;
+  padding: 50px 0 0 0;
+  text-align: center;
+}
+footer p {
+  color: white;
+}
