@@ -1,62 +1,61 @@
 let destination = prompt("Where do you want to go?");
 let time = prompt("When you wanted to go?");
 let seatsRequired = Number(prompt("How many seats you want to book"));
+let farePerSeat = 1000;
 
 function checkAvailability(seatsRequired) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       let seatAvailable = 40;
-      seatsRemaining = seatAvailable - seatsRequired;
+      let seatsRemaining = seatAvailable - seatsRequired;
       if (seatsRequired > seatAvailable) {
         reject("Seat not available");
       } else {
-        resolve("Seat Available remaining: ", seatsRemaining);
+        resolve(seatsRemaining);
       }
-    }, 3000);
+    }, 1000);
   });
 }
-function processPayment(fare) {
+function processPayment(amount) {
   return new Promise((resolve, reject) => {
+    let farePerSeat = 1000;
     setTimeout(() => {
-      let farePerSeat = 1000;
-      setInterval;
-      let fare = Number(prompt("Enter the fare"));
-      if (fare < farePerSeat * seatsRequired) {
+      if (Math.random() < 0.2) {
         reject("Not enough money Payment Process Failed");
       } else {
-        resolve("Payment Process Successful");
+        resolve(`Payment of $${amount} Successful`);
       }
-    }, 3000);
+    }, 1000);
   });
 }
 function confirmBooking(destination, time, seatsRequired) {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(
-        "Booking confirmed for ",
-        destination,
-        " at ",
-        time,
-        " with a total seats of ",
-        seatsRequired
+        `Booking confirmed for ${destination} at ${time} with a total seats of ${seatsRequired}`
       );
-    }, 100);
+    }, 500);
   });
 }
 
-function bookTickets(destination, time, seatsRequired, fare) {
+function bookTickets(destination, farePerSeat, time, seatsRequired) {
+  let totalFare = farePerSeat * seatsRequired;
   return checkAvailability(seatsRequired)
-    .then(processPayment)
-    .then(confirmBooking)
-    .catch(result);
+    .then(() => processPayment(totalFare))
+    .then(() => confirmBooking(destination, time, seatsRequired));
 }
 
 function cancelTicket(destination) {
-  return new Promise((reject) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
-      reject("Timeout your ticket to", destination, " has been cancelled");
-    }, 3000);
+      reject(`Timeout your ticket to ${destination} has been cancelled`);
+    }, 0);
   });
 }
 
-Promise.race([bookTickets, cancelTicket]).then("Successful").catch("Failed");
+Promise.race([
+  bookTickets(destination, farePerSeat, time, seatsRequired),
+  cancelTicket(destination),
+])
+  .then((res) => console.log("Successful:", res))
+  .catch((err) => console.log("Failed: ", err));
