@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+  --primary: #052f48;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.socialBar {
+  background-color: var(--primary);
+}
+.navp {
+  top: 7px;
+}
+.heading p {
+  top: 46px;
+  font-size: 83%;
+  letter-spacing: 2px;
+}
+ul a:hover {
+  color: rgb(44, 129, 255);
+}
+p {
+  font-size: clamp(14px, 2vw, 16px);
+}
+main {
+  background-image: url("img/asset 1.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 47, 72, 0.6);
+  z-index: 1;
+}
+main {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("img/asset 1.jpeg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 47, 72, 0.6);
+  z-index: 1;
+}
+
+main .content {
+  position: relative;
+  z-index: 2;
+}
+.card {
+  width: 22vw;
+}
+.content {
+  max-width: 700px;
+}
+.about {
+  width: 36vw;
+}
+.qualities {
+  background: url(img/asset\ 2.jpeg) no-repeat;
+  background-size: cover;
+  background-position: 0px -150px;
+  min-height: 77vh;
+}
+.quality {
+  width: 40vw;
+  position: relative;
+  left: 20%;
+}
+.technical {
+  background: url(img/asset\ 7.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.technical::before {
+  content: "";
+  position: ;
+  background-color: #00a2ff;
+  inset: 0;
+  z-index: 1;
+}
+.cards img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 768px) {
+  .socialBar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

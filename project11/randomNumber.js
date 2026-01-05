@@ -1,17 +1,21 @@
-let exit = prompt("Welcom press yes to continue no for exit: ");
-let randomNum = Math.floor(Math.random() * (100 - 10 + 1)) + 10;
-let attempts = 0;
+let exit;
 do {
+  let randomNum = Math.floor(Math.random() * 101);
+  let attempts = 0;
   while (attempts < 10) {
-    let guess = parseInt(prompt("Guess the number: "));
+    let guess = parseInt(prompt(attempts+" Guess the number: "));
+    if(isNaN(guess)){
+      alert(attempts+" This is not a valid number")
+      continue;
+    }
     if (guess == randomNum) {
       alert("Correct answer you win");
       alert("Number of attempts: " + (attempts + 1));
       break;
     } else if (guess < randomNum) {
-      alert("Too low guess");
+      alert(attempts+" Too low guess");
     } else if (guess > randomNum) {
-      alert("Too high guess");
+      alert(attempts+" Too high guess");
     }
     attempts++;
   }
@@ -20,4 +24,4 @@ do {
     alert("The correct number was " + randomNum);
   }
   exit = prompt("Do you want to play again yes/no");
-} while (exit == "yes");
+} while (exit == "no");

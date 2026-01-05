@@ -1,0 +1,250 @@
+:root {
+  --primary: #16caf0;
+  --secondary: #44515b;
+  --footer: #3a4753;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar-nav {
+  padding-right: 10%;
+}
+.navbar {
+  height: 60px;
+}
+.nav-link {
+  padding: 5px 0 6px 0;
+}
+.man-Img {
+  position: relative;
+  top: 48px;
+  right: 10px;
+}
+.carousel-indicators button {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50%;
+}
+.carousel-indicators .active {
+  background-color: red;
+  opacity: 0.5;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: red;
+  width: 28px;
+  position: relative;
+}
+.carousel-control-prev-icon {
+  right: 80px;
+}
+.carousel-control-next-icon {
+  left: 80px;
+}
+#sec2,
+.sec5 {
+  background-color: #f2f2f2;
+}
+#sec2 .card {
+  background-color: transparent;
+  border: none;
+}
+.icon-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 3px solid white;
+  outline-offset: 5px;
+}
+
+.icon-circle img {
+  width: 50px;
+  height: 50px;
+}
+.icon-circles {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circles img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+.feature,
+.sec3 {
+  width: 85%;
+}
+.card {
+  border: none;
+}
+
+#sec4 {
+  position: relative;
+  background: url(Images/services/bg_services.png) no-repeat center center /
+    cover;
+}
+
+#sec4::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.59);
+  z-index: 1;
+}
+#sec4::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: contrast(3.25) saturate(1.2) brightness(0.95);
+  z-index: 2;
+}
+.hero-content {
+  position: relative;
+  z-index: 3;
+}
+.progress {
+  border-radius: 0 !important;
+}
+.card-header {
+  background-color: #e6e6e6;
+  min-height: 45px;
+}
+
+.accordion-icon {
+  width: 60px;
+  height: 45px;
+  display: block;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+#accordion .card,
+#accordion .card-header,
+#accordion .collapse,
+#accordion .card-body {
+  border-radius: 0 !important;
+  border: 0;
+}
+.accordion .collapse.show + .card-header .accordion-icon,
+.card-header .btn:not(.collapsed) + div .accordion-icon {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+.progress-bar {
+  position: relative;
+}
+
+.progress {
+  position: relative;
+  overflow: visible !important;
+}
+
+.progress-end {
+  position: absolute;
+  top: -130%;
+  left: 84%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #ffffff;
+}
+.progress-end::after {
+  content: "";
+    position: absolute;
+    top: 100%;
+    left: 52%;
+    transform: translateX(-12%);
+    width: 10px;
+    height: 31px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 9px solid #0d6efd;
+}
+
+.progress-end1 {
+  position: absolute;
+  top: -130%;
+  left: 79%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #ffffff;
+}
+.progress-end1::after {
+  content: "";
+    position: absolute;
+    top: 100%;
+    left: 52%;
+    transform: translateX(-12%);
+    width: 10px;
+    height: 31px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 9px solid #ffc107;
+}
+
+
+.progress-end2 {
+  position: absolute;
+  top: -130%;
+  left: 89%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #ffffff;
+}
+.progress-end2::after {
+  content: "";
+    position: absolute;
+    top: 100%;
+    left: 52%;
+    transform: translateX(-12%);
+    width: 10px;
+    height: 31px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 9px solid #dc3545;
+}
+
+.progress-end3 {
+  position: absolute;
+  top: -130%;
+  left: 94%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #ffffff;
+}
+.progress-end3::after {
+  content: "";
+    position: absolute;
+    top: 100%;
+    left: 52%;
+    transform: translateX(-12%);
+    width: 10px;
+    height: 31px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 9px solid green;
+}
+.list-group-item{
+  background-color: #f5f5f5;
+}
+.list-group-item:nth-child(2)::after {
+  content: "";
+    position: absolute;
+    top: 100%;
+    left: 52%;
+    transform: translateX(-12%);
+    width: 10px;
+    height: 31px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 9px solid green;
+
+}

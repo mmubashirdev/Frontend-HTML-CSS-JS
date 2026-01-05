@@ -1,92 +1,72 @@
 let book = prompt("Which book do you want to borrow?");
-let personName = prompt("Enter your name");
-let returnDate = prompt("When will you return the book");
+let personName = prompt("Enter your name:");
+let returnDate = prompt("When will you return the book?");
 
 function borrowBook(book, personName, returnDate) {
   return new Promise((resolve, reject) => {
-    let borrowInfo = {
-      bookName: book,
-      borrowerName: personName,
-      date: returnDate,
-    };
     resolve(
-      `Book with title ${book} is issued to ${personName} please return it after ${returnDate} days`
+      `Book with title '${book}' is issued to ${personName}. Please return it after ${returnDate} days.`
     );
   });
 }
 
+let isBookAvailable = true;
+
 function checkBookAvailability(book) {
-  let isBookAvailable = true;
   return new Promise((resolve, reject) => {
-    if (isBookAvailable == true) {
-      resolve(`This book is available`);
+    if (isBookAvailable) {
+      resolve(`The book '${book}' is available.`);
       isBookAvailable = false;
     } else {
-      reject(`Sorry book with book title ${book} is not available`);
+      reject(`Sorry, the book '${book}' is not available.`);
     }
   });
 }
+
+function cancellation(borrowed) {
+  return new Promise((resolve, reject) => {
+    let cancel = prompt("Do you want to confirmed borrow request?");
+    if (cancel == "yes") {
+      return resolve("Borrow request confirmed");
+    }
+      reject("Borrow request cancelled.");
+  });
+}
+function checkBookStatus(bookName, borrowerName) {
+  return new Promise((resolve, reject) => {
+    if (!isBookAvailable) {
+      reject(
+        `Sorry, the book '${bookName}' is currently taken by ${borrowerName}.`
+      );
+    } else {
+      resolve(`This book is available.`);
+    }
+  });
+}
+
+function updateBookStatus(bookName, borrowerName) {
+  let isBookReturned = false;
+
+  return new Promise((resolve, reject) => {
+    if (isBookReturned) {
+      isBookAvailable = true;
+      resolve(`The book '${bookName}' is now available in the library.`);
+    } else {
+      reject(`The book '${bookName}' is still with ${borrowerName}.`);
+    }
+  });
+}
+
+
 checkBookAvailability(book)
   .then((msg) => {
     console.log(msg);
+    return borrowBook(book, personName, returnDate);
+
   })
-  .catch((err) => {
-    console.log(err);
-  });
-
-function checkBookStatus(bookInfo) {
-  let isBookAvailable = true;
-  return new Promise((resolve, reject) => {
-    if (isBookAvailable == false) {
-      reject(
-        `Sorry this book with title ${bookInfo.personName}is taken by ${bookInfo.borrowerName}`
-      );
-    } else {
-      resolve(`This book is available`);
-    }
-  });
-}
-
-checkBookStatus(book, personName)
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-
-function updateBookStatus(bookInfo) {
-  let isbookReturned = false;
-  return new Promise((resolve, reject) => {
-    if (isbookReturned == true) {
-      resolve(`This book is now available in the libarary now`);
-    } else {
-      reject(`This book is still with ${bookInfo.borrowerName}`);
-    }
-  });
-}
-updateBookStatus(bookInfo)
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-
-function cancellation(borrowBook) {
-  return new Promise((resolve, reject) => {
-    if (!borrowBook) {
-      reject(
-        `Your borrow request has been cancelled plz return the book to the librarian`
-      );
-    } else {
-      resolve(`Booking success`);
-    }
-  });
-}
-cancellation(bookInfo)
-  .then((result) => {
-    console.log(result);
+  .then((borrowMsg) => {
+    console.log(borrowMsg);
+    return cancellation(borrowMsg);
   })
   .catch((err) => {
     console.log(err);
