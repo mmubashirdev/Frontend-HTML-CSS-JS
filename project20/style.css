@@ -1,0 +1,80 @@
+.position {
+  bottom: 100px;
+  left: 17px;
+}
+.width {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+.card-title-wrapper {
+  min-height: 50px;
+  max-height: 50px;
+  overflow: hidden;
+  margin-bottom: 0.25rem;
+}
+
+.card-text-wrapper {
+  margin-bottom: 0;
+}
+.bg {
+  background: url(images/bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 168px;
+  overflow: hidden;
+  padding: 20px;
+}
+.bg1 {
+  background: url(images/bg1.png);
+  background-size: cover;
+  background-position: center;
+  height: 168px;
+}
+.bg2 {
+  background: url(images/bg2.png);
+  background-size: cover;
+  background-position: center;
+  height: 168px;
+}
+.media {
+  transform: rotate(-28deg);
+  overflow: hidden;
+}
+
+
+.slider-window {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  gap: 70px;
+  transition: transform 0.4s ease;
+}
+
+.slider-track img {
+  width: 15%;        
+  flex-shrink: 0;
+}
+.rotate-90  { transform: rotate(50deg); }
+
+.a{
+  text-decoration: none;
+  display: block;
+}
+.align-arrow{
+  position: absolute;
+    top: 9px;
+    right: 121px;
+}
+.align-0{
+      top: 8px;
+    right: 6px;
+}
+@media (max-width: 768px) {
+ .fix{
+  left: 110px;
+ }
+}

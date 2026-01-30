@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger Labs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg position-absolute bg-transparent z-3 w-100 py-3"
+      >
+        <div
+          class="container-fluid d-flex justify-content-around align-items-center"
+        >
+          <div class="">
+            <a class="navbar-brand text-white heading fs-3 fw-light" href="#"
+              >Feane</a
+            >
+          </div>
+          <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+            <li class="nav-item">
+              <a
+                class="text-white text-uppercase nav-link active"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="text-white text-uppercase nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="text-uppercase dropdown-item" href="#">Burger</a>
+                </li>
+                <li>
+                  <a class="text-uppercase dropdown-item" href="#">Pizza</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="text-uppercase dropdown-item" href="#">Fries</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="text-white text-uppercase nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-white text-uppercase nav-link">Book Table</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-3">
+            <i class="text-white bi bi-person-fill"></i>
+            <i class="text-white bi bi-cart-fill"></i>
+            <i class="text-white bi bi-search"></i>
+            <button
+              type="button"
+              class="btn btn-warning rounded-5 px-4 text-white"
+            >
+              Order Online
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators d-flex align-items-center position-absolute">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active rounded-circle bg-warning" style="width: 25px; height: 25px;"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            class="rounded-circle" style="width: 15px; height: 15px;"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            class="rounded-circle" style="width: 15px; height: 15px;"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/hero-bg.jpg"
+              class="d-block w-100 object-fit-cover"
+              style="height: 100vh"
+              alt=""
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="images/hero-bg.jpg"
+              class="d-block w-100 object-fit-cover"
+              style="height: 100vh"
+              alt=""
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="images/hero-bg.jpg"
+              class="d-block w-100 object-fit-cover"
+              style="height: 100vh"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+     <div class="container d-sm-flex gap-5">
+        <div class="card mt-5 bg-dark text-white" style="max-width: 540px">
+            <div class="row g-0 justify-content-sm-center">
+                <div class="col-4 text-sm-center text-start">
+                    <img src="images/o1.jpg" class="img-fluid rounded-circle border border-4 border-warning"
+                        alt="image is error" />
+                </div>
+                <div class="col-8 col-md-8">
+                    <div class="card-body text-sm-center">
+                        <h5 class="card-title">Tasty Thursdays</h5>
+                        <p class="card-text">20 % <span>Of</span></p>
+                        <button class="btn btn-warning text-white rounded-pill px-4">
+                            Order Now <i class="ri-shopping-cart-fill text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <div class="card mt-5 bg-dark text-white" style="max-width: 540px">
+            <div class="row g-0 justify-content-sm-center">
+                <div class="col-4 col-md-4 text-center">
+                    <img src="images/o2.jpg" class="offer-img img-fluid rounded-circle border border-4 border-warning"
+                        alt="image is error" />
+                </div>
+                <div class="col-8 col-md-8">
+                    <div class="card-body text-sm-center">
+                        <h5 class="card-title">Paizza Days</h5>
+                        <p class="card-text">15 % <span>Of</span></p>
+                        <button class="btn btn-warning text-white rounded-pill px-4">
+                            Order Now <i class="ri-shopping-cart-fill text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="container mt-5">
+        <div class="h1 text-center" id="menu-heading">Our Menu</div>
+        <nav class="navbar navbar-expand">
+            <ul class="navbar-nav mx-auto gap-sm-4">
+                <li class="nav-item">
+                    <a href="#" class="nav-link bg-dark text-white rounded-5 fs-5 px-4">All</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link fs-5 text-black">Burger</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link fs-5 text-black">Pizza</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link fs-5 text-black">Pasta</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link fs-5 text-black">Fries</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="row mt-3">
+            <div class="col-md-4 col-sm-6">
+                <div class="card pizza-card border-0 position-relative">
+                   
+                    <div class="text-center image-wrapper">
+                        <img src="images/f1.png" class="img-fluid pizza-img" alt="Pizza" />
+                    </div>
+              
+                    <div class="card-body pizza-body text-white">
+                        <h5 class="card-title text-decoration-underline">Delicious Pizza</h5>
+                        <p class="card-text small">
+                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                            velit, magnam voluptatem repellendus sed eaque
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="price fs-4">$20</span>
+                            <button class="btn cart-btn">
+                                <i class="ri-shopping-cart-fill text-white fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card pizza-card border-0 position-relative">
+               
+                    <div class="text-center image-wrapper">
+                        <img src="images/f3.png" class="img-fluid pizza-img" alt="Pizza" />
+                    </div>
+        
+                    <div class="card-body pizza-body text-white">
+                        <h5 class="card-title text-decoration-underline">Delicious Piza</h5>
+                        <p class="card-text small">
+                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                            velit, magnam voluptatem repellendus sed eaque
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="price fs-4">$17</span>
+                            <button class="btn cart-btn">
+                                <i class="ri-shopping-cart-fill text-white fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card pizza-card border-0 position-relative">
+                  
+                    <div class="text-center image-wrapper">
+                        <img src="images/f6.png" class="img-fluid pizza-img" alt="Pizza" />
+                    </div>
+       
+                    <div class="card-body pizza-body text-white">
+                        <h5 class="card-title text-decoration-underline">Delicious Pizza</h5>
+                        <p class="card-text small">
+                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                            velit, magnam voluptatem repellendus sed eaque
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="price fs-4">$15</span>
+                            <button class="btn cart-btn">
+                                <i class="ri-shopping-cart-fill text-white fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mt-5">
+                <div class="card pizza-card border-0 position-relative">
+                                    <div class="text-center image-wrapper">
+                        <img src="images/f7.png" class="img-fluid pizza-img" alt="Pizza" />
+                    </div>
+             
+                    <div class="card-body pizza-body text-white">
+                        <h5 class="card-title text-decoration-underline">Tasty Burger</h5>
+                        <p class="card-text small">
+                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                            velit, magnam voluptatem repellendus sed eaque
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="price fs-4">$12</span>
+                            <button class="btn cart-btn">
+                                <i class="ri-shopping-cart-fill text-white fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mt-5">
+                <div class="card pizza-card border-0 position-relative">
+                    
+                    <div class="text-center image-wrapper">
+                        <img src="images/f8.png" class="img-fluid pizza-img" alt="Pizza" />
+                    </div>
+             
+                    <div class="card-body pizza-body text-white">
+                        <h5 class="card-title text-decoration-underline">Tasty Burger</h5>
+                        <p class="card-text small">
+                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                            velit, magnam voluptatem repellendus sed eaque
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="price fs-4">$12</span>
+                            <button class="btn cart-btn">
+                                <i class="ri-shopping-cart-fill text-white fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mt-5">
+                <div class="card pizza-card border-0 position-relative">
+                 
+                    <div class="text-center image-wrapper">
+                        <img src="images/f9.png" class="img-fluid pizza-img" alt="Pizza" />
+                    </div>
+               
+                    <div class="card-body pizza-body text-white">
+                        <h5 class="card-title text-decoration-underline">Tasty Burger</h5>
+                        <p class="card-text small">
+                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                            velit, magnam voluptatem repellendus sed eaque
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="price fs-4">$12</span>
+                            <button class="btn cart-btn">
+                                <i class="ri-shopping-cart-fill text-white fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mt-5">
+                <div class="card pizza-card border-0 position-relative">
+         
+                    <div class="text-center image-wrapper">
+                        <img src="images/f2.png" class="img-fluid pizza-img" alt="Pizza" />
+                    </div>
+             
+                    <div class="card-body pizza-body text-white">
+                        <h5 class="card-title text-decoration-underline">Delicious Burger</h5>
+                        <p class="card-text small">
+                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                            velit, magnam voluptatem repellendus sed eaque
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="price fs-4">$18</span>
+                            <button class="btn cart-btn">
+                                <i class="ri-shopping-cart-fill text-white fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mt-5">
+                <div class="card pizza-card border-0 position-relative">
+                  
+                    <div class="text-center image-wrapper" style="padding-top: 32px; padding-bottom: 32px;">
+                        <img src="images/f4.png" class="img-fluid pizza-img" alt="Pizza" />
+                    </div>
+          
+                    <div class="card-body pizza-body text-white">
+                        <h5 class="card-title text-decoration-underline">Delicious Pasta</h5>
+                        <p class="card-text small">
+                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                            velit, magnam voluptatem repellendus sed eaque
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="price fs-4">$18</span>
+                            <button class="btn cart-btn">
+                                <i class="ri-shopping-cart-fill text-white fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mt-5">
+                <div class="card pizza-card border-0 position-relative">
+                    
+                    <div class="text-center image-wrapper" style="padding-top: 26px; padding-bottom: 26px;">
+                        <img src="images/f5.png" class="img-fluid pizza-img" alt="Pizza" />
+                    </div>
+         
+                    <div class="card-body pizza-body text-white">
+                        <h5 class="card-title text-decoration-underline">French Fries</h5>
+                        <p class="card-text small">
+                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                            velit, magnam voluptatem repellendus sed eaque
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="price fs-4">$10</span>
+                            <button class="btn cart-btn">
+                                <i class="ri-shopping-cart-fill text-white fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <button class="btn btn-warning text-white px-5 mt-4 rounded rounded-5 fs-5">View
+                More</button>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5 main-container" style="background-color: #222831;">
+        <div class="container d-flex py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-white order-2 order-md-1">
+                    <div id="section-four">
+                        <img src="images/about-img.png" class="img-fluid about-img" alt="image is error">
+                    </div>
+                </div>
+                <div class="col-md-6 text-white order-1 order-md-2 d-flex flex-column justify-content-center">
+                    <div class="h3" id="sectionFour">We Are Feare</div>
+                    <p id="sectionFour-p">There are many variations of passages of Lorem Ipsum available, but the
+                        majority
+                        suffered alteration
+                        in some form, by injected humour, or randomised words which don't look even slightly believable.
+                        If
+                        you are to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+                        hidden in the middle of text. All
+                    </p>
+                    <div>
+                        <button class="btn btn-warning text-white rounded-pill px-4">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="booking-container">
+    <div class="row g-5 container mx-auto w-75 py-5">
+    
+      <div class="col-md-6">
+        <h2>Book A Table</h2>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Phone Number" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <select class="form-select" required>
+              <option value="">How many persons?</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5+">5+</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <input type="date" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-book w-100" style="background-color: yellow;">BOOK NOW</button>
+        </form>
+      </div>
+
+     
+      <div class="col-md-6">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.972259951046!2d-74.00601508459305!3d40.71277577933086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316bff64c9%3A0xb43b0c03f16f40c0!2sNew%20York%20City%20Hall!5e0!3m2!1sen!2sus!4v1705679987654!5m2!1sen!2sus"
+          width="100%"
+          height="100%"
+          style="min-height:400px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container py-5 text-center">
+
+    <h2 class="section-title">What Says Our Customers</h2>
+
+    <div class="row justify-content-center g-4">
+
+        <div class="col-sm-5">
+            <div class="testimonial-card text-start">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam
+                </p>
+
+                <h6>Moana Michell</h6>
+                <small>magna aliqua</small>
+            </div>
+
+            <div class="profile-img">
+                <img src="https://i.pravatar.cc/150?img=47">
+            </div>
+        </div>
+
+      
+        <div class="col-md-5">
+            <div class="testimonial-card text-start">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam
+                </p>
+
+                <h6>Mike Hamell</h6>
+                <small>magna aliqua</small>
+            </div>
+
+            <div class="profile-img">
+                <img src="https://i.pravatar.cc/150?img=12">
+            </div>
+        </div>
+
+    </div>
+
+  
+    <div class="d-flex justify-content-center gap-3 mt-5">
+    </div>
+
+</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
